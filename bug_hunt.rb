@@ -13,3 +13,17 @@ end
 
 number_of = Roulette.new
 number_of.chenjun
+
+class Test
+  def test_rand
+    3.times do 
+      number = rand(10) + 1
+      puts number
+    end
+    #number作用域到此为止，后面的number会报找不到方法的异常
+    puts number
+  end
+end
+
+test = Test.new
+test.test_rand
