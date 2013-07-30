@@ -22,4 +22,4 @@ def make_change money, coins = [50,20,10,5,1]
     coins_count
 end
 
-puts make_change 50,[50,20,10,5,1]
+puts make_change 14,[10,7,1]
