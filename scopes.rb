@@ -10,6 +10,6 @@ class MyClass
 end
 
 obj = MyClass.new
-obj.my_method
-obj.my_method
-local_variables
+puts "my_method's variables is #{obj.my_method}"
+puts "my_method's variables is #{obj.my_method}"
+puts local_variables

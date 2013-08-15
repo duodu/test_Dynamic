@@ -9,3 +9,7 @@ obj.instance_eval do
   self
   puts @v
 end
+
+v = 2
+obj.instance_eval { @v = v }
+obj.instance_eval { @v }
