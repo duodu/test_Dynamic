@@ -6,10 +6,10 @@ end
 
 obj = MyClass.new
 obj.instance_eval do
-  self
-  puts @v
+  #self
+  puts "puts #{@v}"
 end
 
-v = 2
-obj.instance_eval { @v = v }
-obj.instance_eval { @v }
+v = 3
+puts obj.instance_eval { @v = v }
+puts obj.instance_eval { @v }
